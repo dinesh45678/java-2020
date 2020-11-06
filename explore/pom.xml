@@ -7,7 +7,7 @@
   <groupId>com.dinesh.walk.java</groupId>
   <artifactId>explore</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+ <!-- Comment -->
   <name>explore</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
