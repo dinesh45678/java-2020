@@ -13,8 +13,7 @@ public class BusTest
 {
 
     @Test
-    public void testConstructor()
-    {
+    public void testConstructor() throws CheckedException {
         Bus bus = new Bus("bus111", 6);
         Assert.assertEquals(bus.getNumberOfWheels(), 6);
         Assert.assertEquals(bus.getName(), "bus111");
@@ -22,8 +21,7 @@ public class BusTest
 
     // camel case
     @Test
-    public void testAccess()
-    {
+    public void testAccess() throws CheckedException {
         Bus bus = new Bus("bus222", 10);
         // bus.name - no access
         // bus.numberOfWheels - no acess

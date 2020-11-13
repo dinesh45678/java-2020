@@ -6,7 +6,7 @@ import org.junit.Test;
 public class RacingCarTest {
 
     @Test
-    public void testConstructor() {
+    public void testConstructor1() {
         RacingCar racingCar = new RacingCar("rCar", 4);
         Assert.assertEquals(racingCar.getNumberOfWheels(), 4);
         Assert.assertEquals(racingCar.getName(), "rCar");
@@ -15,6 +15,18 @@ public class RacingCarTest {
         Assert.assertEquals(racingCar2.getName(), "car22");
         // access default field of RacingCar - engineName
         Assert.assertEquals(racingCar2.getEngineName(), "racingEngine");
+    }
+
+    @Test
+    public void testConstructor2() {
+        RacingCar racingCar = null;
+        try {
+            racingCar = new RacingCar("rCar", 12);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        Assert.assertNotNull(racingCar);
     }
 
     @Test
