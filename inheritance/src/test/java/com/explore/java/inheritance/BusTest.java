@@ -19,5 +19,16 @@ public class BusTest
         Assert.assertEquals(bus.getNumberOfWheels(), 6);
         Assert.assertEquals(bus.getName(), "bus111");
     }
+
+    // camel case
+    @Test
+    public void testAccess()
+    {
+        Bus bus = new Bus("bus222", 10);
+        // bus.name - no access
+        // bus.numberOfWheels - no acess
+        Assert.assertEquals(bus.getNumberOfWheels(), 10);
+        Assert.assertEquals(bus.getName(), "bus222");
+    }
 }
 
