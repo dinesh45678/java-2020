@@ -20,6 +20,5 @@ public class ArrayListStackTest {
             stack.push(i*10);
         }
         Assert.assertTrue(stack.isFull());
-
     }
 }
